@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG & Flats Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PG & Flats Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-signup">Student Sign Up</a></li>
+                <li><a href="#owner-signup">Owner Sign Up</a></li>
+                <li><a href="#property-listings">Property Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="student-signup">
+            <h2>Student Sign Up</h2>
+            <form id="studentForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="College/University Name" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="owner-signup">
+            <h2>Owner Sign Up</h2>
+            <form id="ownerForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="Property Name" required>
+                <input type="text" placeholder="Location" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="property-listings">
+            <h2>Available Properties</h2>
+            <div class="property-card">
+                <h3>Cozy PG in Downtown</h3>
+                <p>Price: $300/month</p>
+                <p>Location: Main St, Downtown</p>
+                <button>View Details</button>
+            </div>
+            <div class="property-card">
+                <h3>2BHK Flat near Campus</h3>
+                <p>Price: $800/month</p>
+                <p>Location: College Ave</p>
+                <button>View Details</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PG & Flats Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
