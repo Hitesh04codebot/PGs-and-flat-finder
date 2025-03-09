@@ -1,0 +1,108 @@
+/* Apply Greyish Background to Entire Page Except PG Boxes */
+.pg-list-page {
+    background-color: #d3d3d3; /* Light grey background */
+    background-image: url('grey-bg.jpg'); /* Ensure this image exists */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+    padding-bottom: 50px;
+}
+
+/* PG List Wrapper - Centers the Boxes */
+.pg-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the PG boxes */
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* PG Box Styling - Centered */
+.pg-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text and image properly */
+    width: 90%;
+    max-width: 800px;
+    background: white; /* White background for PG boxes */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* PG Box Image - Added margin to the left */
+.pg-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 20px; /* Adds space to the left of the image */
+    transition: transform 0.3s;
+}
+
+/* PG Details */
+.pg-details {
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+}
+
+/* Search & Filters */
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.search-filter input, .search-filter select, .search-filter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-filter button {
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-filter button:hover {
+    background: #e55b00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
